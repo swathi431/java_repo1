@@ -9,8 +9,8 @@ pipeline{
 
   		stage('Build') {
    			 steps {
-				cd /home/ubuntu/Ass_jenkins/workspace/pipeline_assign
-      				 mvn clean install
+				sh 'cd /home/ubuntu/Ass_jenkins/workspace/pipeline_assign'
+      				sh 'mvn clean install'
     			}
   		}
 
