@@ -16,7 +16,7 @@ pipeline{
 
   		stage('Deploy') {
    			 steps {
-			 sh 'cp /home/ubuntu/jenkins/workspace/pipeline_assign/target/*.war /opt/apache-tomcat-9.0.55/webapps/'
+			 sh 'sudo cp /home/ubuntu/jenkins/workspace/pipeline_assign/target/*.war /opt/apache-tomcat-9.0.55/webapps/'
    			 }
  		 }
 
